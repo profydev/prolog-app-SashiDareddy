@@ -5,11 +5,16 @@ export enum ProjectLanguage {
 }
 
 export enum ProjectStatus {
-  stable = "stable",
+  info = "info",
   warning = "warning",
-  critical = "critical",
+  error = "error",
 }
 
+export enum ProjectStatusDisplay {
+  info = "Stable",
+  warning = "Warning",
+  error = "Critical",
+}
 export type Project = {
   id: string;
   name: string;
